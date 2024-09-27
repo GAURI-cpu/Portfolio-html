@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>Gauri - frontend developer Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        nav ul li a:hover {
+            /* text-decoration: none; */
+            color:
+                rgb(10, 123, 57);
+            font-size: 1.04rem;
+
+
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            margin: 30px;
+        }
+
+        .RightSection img {
+            border-radius: 55%;
+            position: relative;
+            top: 3rem;
+            width: 90%;
+            box-shadow: 0 0 25px var(rgb(160, 225, 255));
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+            margin: 4px 4.5px;
+        }
+
+        .beige {
+            color: rgb(10, 123, 57)
+        }
+
+        #element {
+            color: rgb(10, 123, 57);
+        }
+
+        .secondSection {
+            max-width: 90vw;
+            margin: auto;
+            height: 90vh;
+        }
+
+        main hr {
+            border: 0;
+            background-color: aquamarine;
+            height: 1.3px;
+            margin: 30px 64px;
+
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .momo {
+            color: rgb(10, 123, 57);
+            font-size: 0.7rem;
+        }
+
+        .RightsecondSection img {
+            width: 30%;
+            margin: 5% 0;
+
+        }
+
+        .leftSection p {
+            font-size: 40%;
+        }
+
+        .secondSection hr {
+            background-color: white;
+            /* width: 87vh; */
+            height: 3px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Explore Me</div>
+
+            <div class="Right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <h1>Hello</h1>
+                <h2>
+                    <div>Myself <span class="beige">Gauri</span> </div>
+                </h2>
+                <p>I am a 2nd year student of RV COLLEGE OF ENGINEERING.Very interested in Badminton and making websites
+                </p>
+                <!-- <div>and I'm a Passionate</div>
+                <div>Frontend Developer</div> -->
+                <span id="element"></span>
+            </div>
+            <div class="RightSection">
+                <img src="fd.png.png" alt="" />
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <nav>
+                <div class="RightsecondSection">
+                    <img src="m.png.png" alt="" />
+                </div>
+            </nav>
+            <span class="momo">What I am gonna do in future</span>
+            <h1>Current Projects</h1>
+
+ 
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['...Frontend Developer', '...Badminton Player', '...Coder', '...EC student'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> -->
+    <!-- <ion-icon name="logo-github"></ion-icon> -->
+    <!-- pm/@ionic/core/dist/ionic/ionic.js"></script> -->
+</body>
+
+</html>
